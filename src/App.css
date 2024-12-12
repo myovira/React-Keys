@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+.btns button{
+  height:max-content;
+  width: max-content;
+  font-size: 23px;
+  border-radius: 5px;
+  padding: 2px 2px;
+  margin-top: 50px;
+}
+.additionapp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 100%;
+}
+.additionapp h1{
+  background-color: pink;
+  margin-bottom: 20px;
+}
+.additionapp input{
+  height: 30px;
+  font-size: 16px;
+}
+.additionapp button{
+  color: brown;
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid brown;
+  margin-bottom: 20px;
+}
+.additionapp p{
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+
+}
+.toggle button {
+  width: 60px;
+  height: 30px;
+  color: white;
+  background-color: blue;
+}
+.toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.clicktracker {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 20px;  
+padding: 10px;
+gap: 20px;
+font-size: 25px;
+background: burlywood;
+}
+.clicktracker button{
+  width: max-content;
+  height: max-content;
+  font-size: 20px;
+  color: white;
+  background-color: brown;
+}
