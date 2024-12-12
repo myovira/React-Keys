@@ -43,7 +43,9 @@ const Home = () => {
     <br></br>
     <br></br>
     <p>Asgmt 13:</p><Link to="additionapp">Simple Addition App</Link>
-    </>
+    <br></br>
+    <br></br>
+    <p>Asgmt 14:</p><Link to="timerapp">Timer Application</Link>    </>
   )
 }
 

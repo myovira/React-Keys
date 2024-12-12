@@ -8,6 +8,7 @@ import SimpleAdditionApp from './componant/SimpleAdditionApp'
 import ClickTracker from './componant/ClickTracker'
 import CounterApp from './componant/CounterApp'
 import Mode from './componant/Mode'
+import TimerApp from './componant/TimerApp'
 
 
 const App = () => {
@@ -23,8 +24,10 @@ const App = () => {
     <Route path='additionapp'element={<SimpleAdditionApp/>} />
     <Route path='clicktracker' element={<ClickTracker />} />
     <Route path='mode' element={<Mode/>} />
+    <Route path='timerapp' element={<TimerApp/>} />
     </Routes>
     </Router>
+   
     </>
   );
 }
