@@ -14,6 +14,7 @@ const TodoList = () => {
   const deleteList = (id)=>{
     let newlistTodo=[...listTodo];
     newlistTodo.splice(id,1);
+    
     setListtodo([...newlistTodo]);
 
   }
