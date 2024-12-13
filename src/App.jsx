@@ -9,6 +9,7 @@ import ClickTracker from './componant/ClickTracker'
 import CounterApp from './componant/CounterApp'
 import Mode from './componant/Mode'
 import TimerApp from './componant/TimerApp'
+import ColorSwitcher from './componant/ColorSwitcher'
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
     <Route path='clicktracker' element={<ClickTracker />} />
     <Route path='mode' element={<Mode/>} />
     <Route path='timerapp' element={<TimerApp/>} />
+    <Route path='colorswitcher' element={<ColorSwitcher/>}/>
     </Routes>
     </Router>
    
