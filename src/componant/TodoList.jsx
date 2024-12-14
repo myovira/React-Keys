@@ -8,14 +8,14 @@ const TodoList = () => {
   const [listTodo, setListtodo] = useState([]);
 
   let addList=(text) => {
+    if(text!=='')
     setListtodo([...listTodo,text]);
-    setText(" ");
+    setText('');
   }
   const deleteList = (id)=>{
     let newlistTodo=[...listTodo];
-    newlistTodo.splice(id,1);
-    
-    setListtodo([...newlistTodo]);
+    newlistTodo.splice(id,1)
+   setListtodo([...newlistTodo])
 
   }
 

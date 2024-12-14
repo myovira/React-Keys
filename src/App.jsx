@@ -10,6 +10,9 @@ import CounterApp from './componant/CounterApp'
 import Mode from './componant/Mode'
 import TimerApp from './componant/TimerApp'
 import ColorSwitcher from './componant/ColorSwitcher'
+import SearchFilter from './componant/SearchFilter'
+import FetchDisplayAPI from './componant/FetchDisplayAPI'
+import ImageCarousel from './componant/ImageCarousel'
 
 
 const App = () => {
@@ -27,6 +30,9 @@ const App = () => {
     <Route path='mode' element={<Mode/>} />
     <Route path='timerapp' element={<TimerApp/>} />
     <Route path='colorswitcher' element={<ColorSwitcher/>}/>
+    <Route path='searchfilter' element={<SearchFilter />} />
+    <Route path='fetchapi'element={<FetchDisplayAPI/>}/>
+    <Route path='imagecarousel' element={<ImageCarousel/>} />
     </Routes>
     </Router>
    

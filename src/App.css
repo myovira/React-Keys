@@ -148,7 +148,8 @@ font-size: 18px;
   
 }
 .link{
-background-color:darkcyan;
+background:linear-gradient(rgba(94, 94, 100, 1),transparent);
+background-color:cadetblue;
 padding: 20px;
 border-radius: 10px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -282,4 +283,3 @@ background-color: #333;
   font-weight: bold;
   cursor: pointer;
 }
-

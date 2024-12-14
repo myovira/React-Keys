@@ -22,7 +22,7 @@ const Home = () => {
             <div className='link'><Link style={{textDecoration:"none", color:"White"}} to="clicktracker">Click Tracker</Link></div>
             <div className='link'><Link style={{textDecoration:"none", color:"White"}}to="additionapp">Simple Addition App</Link></div>
             <div className='link'><Link style={{textDecoration:"none", color:"White"}}to="timerapp">Timer Application</Link></div>
-          </div>
+            </div>
              </section>
     </>
   )
