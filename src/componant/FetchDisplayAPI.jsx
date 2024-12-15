@@ -1,41 +1,37 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-
-const recipes={
-  recipes:[],
-}
 const FetchDisplayAPI = () => {
-  const [recipes, setrecipes] = useState();
+
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://dummyjson.com/recipes');
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
 
   useEffect(() => {
-    async function getRecipes() {
-      try {
-        const data = await fetch('https://dummyjson.com/recipes');
-        const recipesObj = await data.json();
-        setcarts(recipesObj.recipes);
-
-      } catch ( error) {
-        console.log(error);
-      }
-    }
-    getRecipes();
-
+    fetchData();
   }, []);
-  
-  console.log(recipes);
-
-
-
   return (
-   <>
-   <h1>Recipes</h1>
-   <ul>
-    {carts.map((recipesObj)=> {
-      return <li>{recipesObj.name}</li>
-    })}
-   </ul>
-   </>
-  )
-}
+    <div>
+      <h1>Data Fetcher</h1>
+      {error ? (
+        <p>Error: {error}</p>
+      ) : (
+        <ul>
+          {data.map((item) => (
+            <li key={(setData)}>{item.title}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
 
-export default FetchDisplayAPI
+export default FetchDisplayAPI;
